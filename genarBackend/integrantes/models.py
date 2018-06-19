@@ -24,4 +24,5 @@ class Articulo(models.Model):
         return self.titulo
 
 
-class Image(models.Model)
+class Image(models.Model):
+    imagen = models.FileField(blank=False, null=False)

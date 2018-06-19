@@ -1,0 +1,137 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Genar</title>
+</head>
+
+<body>
+
+    <div class="nav-container">
+        <div class="logo">GENAR</div>
+        <div class="login" id="loginBtn">login</div>
+    </div>
+
+    <div id="login-Modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn" id="closelogin">&times;</span>
+                <h2>Modal Login Header</h2>
+            </div>
+            <div class="modal-body">
+                <form action="get">
+                    <label for="login-mail">Email</label>
+                    <input type="email" name="login-mail" id="login-mail">
+                    <label for="login-pasword">Password</label>
+                    <input type="password" name="login-password" id="login-password">
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button"  class="accept-login">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">este es el footer</div>
+        </div>
+    </div>
+
+
+
+
+    <div class="jumbotron">
+        <div class="jumbo_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad animi, eius aperiam deleniti quae accusantium rem quia repellendus
+            dicta possimus enim explicabo aliquam dolor ipsum perferendis doloremque. Magni expedita ab, commodi accusamus
+            sapiente molestias alias laudantium assumenda quisquam. Ea, id temporibus sunt voluptatibus repudiandae soluta.
+            Nulla minima eum non blanditiis perspiciatis. Maiores ex molestias beatae dolorum doloribus ratione minima numquam,
+            consequatur iure ipsum, amet ducimus, ullam deleniti! Accusantium molestias laudantium quod vero similique vel
+            fugit repellat accusamus perferendis deleniti expedita, beatae nisi? Deleniti a sint nesciunt similique ea vitae
+            omnis, consequatur aliquid perferendis soluta quasi magnam. Doloribus hic saepe unde atque eos quis nihil magni?
+            Dolore odit iusto provident cupiditate a repellendus reiciendis, maxime, ad quibusdam perspiciatis delectus aut
+            similique non quod. Perspiciatis doloremque animi voluptatibus mollitia tempore maxime tenetur?
+        </div>
+    </div>
+    <div class="separador"></div>
+
+    
+    <div id="integrantes"></div>
+
+    <div id="integrantes-Modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn" id="closeinteg1">&times;</span>
+                <h2>Modal Integrantes Header</h2>
+            </div>
+            <div class="modal-body">cv del integrante</div>
+            <div class="modal-footer">este es el footer</div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <div class="separador"></div>
+
+
+    <div class="pdf_reader">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="">Publicasion 1</a>
+                </li>
+                <li>
+                    <a href="">Publicasion 2</a>
+                </li>
+                <li>
+                    <a href="">Publicasion 3</a>
+                </li>
+                <li>
+                    <a href="">Publicasion 4</a>
+                </li>
+                <li>
+                    <a href="">Publicasion 5</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">tesis 1</a>
+                </li>
+                <li>
+                    <a href="">tesis 2</a>
+                </li>
+                <li>
+                    <a href="">tesis 3</a>
+                </li>
+                <li>
+                    <a href="">tesis 4</a>
+                </li>
+                <li>
+                    <a href="">tesis 5</a>
+                </li>
+            </ul>
+        </div>
+        <iframe src="/pdf/Practical Lighting.pdf" frameborder="0">
+            <object data="/pdf/Practical Lighting.pdf" type="application/pdf" class="pdf_obj" width="100%" height="800px">
+                <embed src="/pdf/Practical Lighting.pdf" type="application/pdf">
+                <p>This browser does not support PDFs. Please download the PDF to view it:
+                    <a href="/pdf/Practical Lighting.pdf " Download PDF</a>.</p>
+                </embed>
+            </object>
+        </iframe>
+
+
+
+    </div>
+    
+
+
+
+</body>
+
+<script src="js/integrantesModal.js "></script>
+<script src="js/loginModal.js "></script>
+<script src="js/apiConector.js "></script>
+
+</html>

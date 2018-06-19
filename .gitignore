@@ -1,0 +1,15 @@
+*.pyc
+*~
+__pycache__
+AIVenv
+db.sqlite3
+/static
+.DS_Store
+.idea/
+.vscode/
+
+/README.md
+x
+run.bat
+
+debug.log

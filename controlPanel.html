@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>genarcontrolpanel</title>
+</head>
+
+<body>
+    <form id="crear_integrante_form" method="post">
+
+        <div id="image" class="dropzone">
+            <p>Arrastra tu imagen aqui.</p>
+        </div>
+
+        <div class="form-group">
+
+            <input class="form-control" name="nombre" id="nombre" placeholder="Nombre" />
+        </div>
+
+
+        <div class="form-group">
+
+            <input class="form-control" type="email" name="email" id="email" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+
+            <input class="form-control" type="password" name="password" id="password" placeholder="Password" />
+        </div>
+
+        <div class="box">
+
+            <div class="box__input">
+                <input class="box__file" type="file" name="image" id="file" data-multiple-caption="{count} files selected" multiple />
+                <label for="file">
+
+                    <strong>Elige una imagen</strong>
+
+                    <span class="box__dragndrop"> O arrastrala aqui </span>.</label>
+
+            </div>
+
+            <div class="btn_enviar">
+                <input type="submit" value="enviar" class="btn" />
+            </div>
+
+            <div class="box__uploading">Subiendo&hellip;</div>
+
+            <div class="box__success">Listo!</div>
+
+            <div class="box__error">Ups... Error!
+                <span></span>.</div>
+
+        </div>
+    </form>
+    <script src="js/apiConector.js "></script>
+    <script src="js/form-drag-and-drop.js "></script>
+</body>
+
+</html> 

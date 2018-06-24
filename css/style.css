@@ -30,6 +30,7 @@ ul {
   margin: 30px 60px;
   font-size: 1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .jumbotron {
@@ -241,43 +242,3 @@ button {
     opacity: 1
   }
 }
-/*///////////////form ///////////*/
-#crear_integrante_form{
-  
-  margin-top: 50px;
-  margin-right: auto; 
-  margin-left: auto;
-  display:flex;
-  flex-direction: column;
-	flex-wrap:wrap;
-	text-align:center;
-  justify-content: center;
-  width: 50%;
-}
-
-.form-group{
-  margin: 0px 20px;
-}
-.dropzone{
-  margin: 20px;
-  align-content: center;
-  align-items: center;
-  border: 2px dashed #8F2280;
-  color: #8F2280;
-  line-height: 250px;
-  
-}
-
-.dropzone.dragover{
-  margin: 20px;
-  align-content: center;
-  align-items: center;
-  border: 2px dashed blue;
-  color: blue;
-  line-height: 250px;
-
-}
-
-
-
-/*/////////////// FIN form ///////////*/

@@ -10,6 +10,7 @@ db.sqlite3
 .otrosArchivos/
 .images/
 .image-sourse/
+.genarBackend/integrantes/images/
 
 /README.md
 x

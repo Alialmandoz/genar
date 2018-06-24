@@ -8,6 +8,8 @@ db.sqlite3
 .idea/
 .vscode/
 .otrosArchivos/
+.images/
+.image-sourse/
 
 /README.md
 x

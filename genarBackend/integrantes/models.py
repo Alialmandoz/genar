@@ -4,7 +4,7 @@ from django.db import models
 class Integrante(models.Model):
     nombre = models.CharField(max_length=100, blank=True)
     email = models.EmailField(max_length=70, blank=True)
-    # imagen = models.FileField(blank=False, null=False)
+    imagen = models.ImageField(blank=True, upload_to='../images/')
     password = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
@@ -22,7 +22,3 @@ class Articulo(models.Model):
 
     def __str__(self):
         return self.titulo
-
-
-class Image(models.Model):
-    imagen = models.FileField(blank=False, null=False)

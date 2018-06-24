@@ -20,7 +20,7 @@ function getIntegrantes(user_id) {
                 let ouput =
                     `
                 <figure class="container_integrante">
-                    <img class="img-integrante" src="${element.imagen}" alt="${counter}"/>
+                    <img class="img-integrante" src="genarBackend/integrantes${element.imagen}" alt="${counter}"/>  
                     <figcaption class="integrante_text">
                         <h3>${element.nombre}</h3>
                         <p>${element.email}</p>

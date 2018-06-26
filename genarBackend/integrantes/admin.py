@@ -6,7 +6,7 @@ admin.site.index_title = "Administrar integrantes Genar"
 
 admin.site.site_title = "Genar"
 admin.site.site_header = "Genar"
-admin.site.site_url = 'http://127.0.0.1:5500/index.html'
+admin.site.site_url = '/'
 
 
 @admin.register(Integrante)

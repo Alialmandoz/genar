@@ -1,0 +1,116 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'integrantes/style.css' %}">
+    <style>
+        .jumbotron::after {
+            content: "";
+            background-image: url("../../media/images/test-tubes-1372411084n8C.jpg");
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            z-index: -1;
+        }
+
+    </style>
+    <title>Genar</title>
+</head>
+
+<body>
+<div class="jumbotron">
+    <div class="jumbo_text">
+
+        <div class="logo">GENAR</div>
+        <a class="login" id="loginBtn" href="admin/">Login</a>
+    </div>
+</div>
+
+<div class="separador">
+
+
+</div>
+
+
+<div id="integrantes"></div>
+
+<div id="integrantes-Modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="closeBtn" id="closeinteg1">&times;</span>
+
+            <h2>Modal Integrantes Header</h2>
+        </div>
+        <div class="modal-body">cv del integrante</div>
+        <div class="modal-footer">este es el footer</div>
+
+
+    </div>
+</div>
+
+
+<div class="separador"></div>
+
+
+<div class="pdf_reader">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="">Publicasion 1</a>
+            </li>
+            <li>
+                <a href="">Publicasion 2</a>
+            </li>
+            <li>
+                <a href="">Publicasion 3</a>
+            </li>
+            <li>
+                <a href="">Publicasion 4</a>
+            </li>
+            <li>
+                <a href="">Publicasion 5</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="">tesis 1</a>
+            </li>
+            <li>
+                <a href="">tesis 2</a>
+            </li>
+            <li>
+                <a href="">tesis 3</a>
+            </li>
+            <li>
+                <a href="">tesis 4</a>
+            </li>
+            <li>
+                <a href="">tesis 5</a>
+            </li>
+        </ul>
+    </div>
+    <iframe src="{% static '../../media/pdf/Practical Lighting.pdf' %}" frameborder="0">
+        <object data="{% static '../../media/pdf/Practical Lighting.pdf' %}" type="application/pdf" class="pdf_obj" width="100%"
+                height="800px">
+            <embed src="{% static '../../media/pdf/Practical Lighting.pdf' %}" type="application/pdf">
+                <p>This browser does not support PDFs. Please download the PDF to view it:
+                    <a href="{% static '../../media/pdf/Practical Lighting.pdf ' %}"> Download PDF </a>.</p>
+            </embed>
+        </object>
+    </iframe>
+
+
+</div>
+
+
+</body>
+
+<script src="{% static 'integrantes/js/apiConector.js' %} "></script>
+
+</html>

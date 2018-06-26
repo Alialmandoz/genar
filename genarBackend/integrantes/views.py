@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
@@ -50,3 +51,8 @@ def integrante_detail(request, pk):
     elif request.method == 'DELETE':
         integrante.delete()
         return HttpResponse(status=status.HTTP_204_NO_CONTENT)
+
+
+@csrf_exempt
+def index(request):
+    return render(request, 'index.html', context={},)

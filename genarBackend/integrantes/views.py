@@ -56,3 +56,22 @@ def integrante_detail(request, pk):
 @csrf_exempt
 def index(request):
     return render(request, 'index.html', context={},)
+
+
+@csrf_exempt
+def articulos_list(request):
+    if request.method == 'GET':
+        articulos = Articulo.objects.all()
+        articulo_serializer = ArticuloSerializer(articulos, many=True)
+        return JSONResponse(articulo_serializer.data)
+
+
+@csrf_exempt
+def articulo_detail(request, pk):
+    try:
+        articulo = Articulo.objects.get(pk=pk)
+    except Articulo.DoesNotExist:
+        return HttpResponse(status=status.HTTP_404_NOT_FOUND)
+    if request.method == 'GET':
+        articulo_serializer = ArticuloSerializer(articulo)
+        return JSONResponse(articulo_serializer.data)

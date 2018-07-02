@@ -1,10 +1,11 @@
 from django.db import models
+from sorl.thumbnail import ImageField as imgField
 
 
 class Integrante(models.Model):
     nombre = models.CharField(max_length=100, blank=True)
     email = models.EmailField(max_length=70, blank=True)
-    imagen = models.ImageField(blank=True, upload_to='images/')
+    imagen = imgField(blank=True, upload_to='images/')
     password = models.CharField(max_length=100, blank=True)
 
     def __str__(self):

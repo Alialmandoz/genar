@@ -8,17 +8,7 @@ class IntegranteSerializer(serializers.ModelSerializer):
         fields = ('nombre', 'email', 'imagen', 'password')
 
 
-class ArticuloSerializer(serializers.Serializer):
-    titulo = serializers.CharField(max_length=100)
-    archivo = serializers.FileField()
-
-    def create(self, validated_data):
-        return Articulo.objects.create(**validated_data)
-
-    def update(self, instance, validated_data):
-        instance.titulo = validated_data.get('titulo', instance.titulo)
-        instance.archivo = validated_data.get('archivo', instance.archivo)
-
-        instance.save()
-
-        return instance
+class ArticuloSerializer(serializers.ModelSerializer):
+    class Meta():
+        model = Articulo
+        fields = ('id', 'titulo', 'archivo', 'tipo')

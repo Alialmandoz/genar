@@ -1,0 +1,67 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'integrantes/style.css' %}">
+    <style>
+        .jumbotron::after {
+            content: "";
+            background-image: url("../../media/images/test-tubes-1372411084n8C.jpg");
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            z-index: -1;
+        }
+    </style>
+
+    
+    <title>Genar</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="jumbo_text">
+
+            <div class="logo">GENAR</div>
+            <a class="login" id="loginBtn" href="admin/">Login</a>
+        </div>
+    </div>
+
+    <div class="separador"></div>
+
+
+    <div id="integrantes"></div>
+
+
+
+    <div class="separador"></div>
+
+
+    <div class="trabajos" id="listadetrabajos">
+
+
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content" id="modal-content">
+                <span class="close">&times;</span>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+<script src="{% static 'integrantes/js/apiConector.js' %} "></script>
+<script src="{% static 'integrantes/js/modales.js' %} "></script>
+

@@ -1,0 +1,266 @@
+* {
+    margin: 0%;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #8F2280;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-container {
+    overflow: hidden;
+    height: 80px;
+    background-color: #8F2280;
+    color: white
+}
+
+.logo {
+    float: left;
+    margin: 20px 60px;
+    font-size: 2rem;
+}
+
+.login {
+    float: right;
+    margin: 30px 60px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.jumbo_text {
+    height: 100vh;
+    font-size: 1.5em;
+    color: #f4f4f4;
+    padding: 10%
+}
+
+.jumbo_text .logo {
+    color: #f4f4f4;
+    font-size: 5em;
+}
+
+/* ///////////////////// separador //////////////////// */
+
+.separador {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    background-color: #8F2280;
+    text-align: center;
+}
+
+/* ///////////////////// fin separador //////////////////// */
+
+/* ///////////////////// integrantes //////////////////// */
+
+#integrantes {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+}
+
+.container_integrante {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 150px;
+    margin: 10px 0px 10px 0px;
+    align-content: center;
+    color: white;
+    background-color: #8F2280;
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+}
+
+.container_integrante img {
+    align-self: center;
+    border-radius: 5px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.container_integrante:hover {
+    box-shadow: 0 0 25px #8F2280;
+    transform: scale(1.03);
+}
+
+.integrante_text {
+    align-content: center;
+    text-align: center;
+    font-size: 100%;
+    padding: 20px;
+}
+
+.integrante_text h3 {
+    text-transform: capitalize;
+}
+
+/* ///////////////////// Fin integrantes //////////////////// */
+
+/* ///////////////////// seccion trabajos //////////////////// */
+.trabajos{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+}
+
+.trabajo {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 150px;
+    margin: 10px 0px 10px 0px;
+    align-content: center;
+    color: white;
+    background-color: #8F2280;
+    transition: all .5s cubic-bezier(0.91, 0.04, 1, 0.01);
+    border-radius: 5px;
+}
+
+.tipoT{
+  
+    border: solid 6px rgb(143, 34, 43)
+
+}
+.tipoP{
+    border: solid 6px rgb(81, 34, 143);
+
+}
+
+
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ///////////////////// MODAL //////////////////// */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #8F2280;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 5% auto;
+    width: 90%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.modal-header h2, .modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: #8F2280;
+    padding: 15px;
+    color: #fff;
+}
+
+.modal-body {
+    padding: 10px 20px;
+}
+
+.modal-footer {
+    background: #8F2280;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.closeBtn {
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
